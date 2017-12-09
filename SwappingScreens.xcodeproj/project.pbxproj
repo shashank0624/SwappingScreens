@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		9E8CF6F61FDBC5D40026EF49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8CF6F51FDBC5D40026EF49 /* AppDelegate.swift */; };
-		9E8CF6F81FDBC5D40026EF49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8CF6F71FDBC5D40026EF49 /* ViewController.swift */; };
+		9E8CF6F81FDBC5D40026EF49 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8CF6F71FDBC5D40026EF49 /* LoginVC.swift */; };
 		9E8CF6FB1FDBC5D40026EF49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8CF6F91FDBC5D40026EF49 /* Main.storyboard */; };
 		9E8CF6FD1FDBC5D40026EF49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E8CF6FC1FDBC5D40026EF49 /* Assets.xcassets */; };
 		9E8CF7001FDBC5D40026EF49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8CF6FE1FDBC5D40026EF49 /* LaunchScreen.storyboard */; };
+		9E8CF7081FDBC8740026EF49 /* MusicListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8CF7071FDBC8740026EF49 /* MusicListVC.swift */; };
+		9E8CF70A1FDBCD000026EF49 /* PlaySongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8CF7091FDBCD000026EF49 /* PlaySongVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9E8CF6F21FDBC5D40026EF49 /* SwappingScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwappingScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8CF6F51FDBC5D40026EF49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E8CF6F71FDBC5D40026EF49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9E8CF6F71FDBC5D40026EF49 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9E8CF6FA1FDBC5D40026EF49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E8CF6FC1FDBC5D40026EF49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E8CF6FF1FDBC5D40026EF49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E8CF7011FDBC5D40026EF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E8CF7071FDBC8740026EF49 /* MusicListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListVC.swift; sourceTree = "<group>"; };
+		9E8CF7091FDBCD000026EF49 /* PlaySongVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySongVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				9E8CF6F51FDBC5D40026EF49 /* AppDelegate.swift */,
-				9E8CF6F71FDBC5D40026EF49 /* ViewController.swift */,
+				9E8CF6F71FDBC5D40026EF49 /* LoginVC.swift */,
 				9E8CF6F91FDBC5D40026EF49 /* Main.storyboard */,
 				9E8CF6FC1FDBC5D40026EF49 /* Assets.xcassets */,
 				9E8CF6FE1FDBC5D40026EF49 /* LaunchScreen.storyboard */,
 				9E8CF7011FDBC5D40026EF49 /* Info.plist */,
+				9E8CF7071FDBC8740026EF49 /* MusicListVC.swift */,
+				9E8CF7091FDBCD000026EF49 /* PlaySongVC.swift */,
 			);
 			path = SwappingScreens;
 			sourceTree = "<group>";
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E8CF6F81FDBC5D40026EF49 /* ViewController.swift in Sources */,
+				9E8CF7081FDBC8740026EF49 /* MusicListVC.swift in Sources */,
+				9E8CF70A1FDBCD000026EF49 /* PlaySongVC.swift in Sources */,
+				9E8CF6F81FDBC5D40026EF49 /* LoginVC.swift in Sources */,
 				9E8CF6F61FDBC5D40026EF49 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +307,7 @@
 				9E8CF7061FDBC5D40026EF49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
