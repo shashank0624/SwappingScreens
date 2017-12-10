@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G17023" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,16 +23,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aZd-ul-Ssv">
+                                <rect key="frame" x="75" y="54" width="224" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T7q-4I-oRw">
+                                <rect key="frame" x="75" y="118" width="224" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEz-sJ-SsY">
+                                <rect key="frame" x="148.5" y="172" width="77" height="30"/>
                                 <state key="normal" title="Login Now!"/>
                                 <connections>
                                     <segue destination="3hB-Nw-So9" kind="show" id="Qr1-8L-MEt"/>
@@ -51,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-900" y="38"/>
+            <point key="canvasLocation" x="-1622" y="22"/>
         </scene>
         <!--Music ListVC-->
         <scene sceneID="bhb-fe-WyT">
@@ -66,13 +72,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqw-Uh-gyo">
+                                <rect key="frame" x="16" y="20" width="40" height="30"/>
                                 <state key="normal" title="BACK"/>
                                 <connections>
                                     <action selector="backButtonPressed:" destination="3hB-Nw-So9" eventType="touchUpInside" id="4X6-Yh-eYi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJZ-RB-RlU">
+                                <rect key="frame" x="131" y="318.5" width="113" height="30"/>
                                 <state key="normal" title="Load 3rd Screen"/>
+                                <connections>
+                                    <action selector="load3rdScreenPressed:" destination="3hB-Nw-So9" eventType="touchUpInside" id="HKI-0b-dTf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -84,12 +95,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="nUZ-1p-uPH" kind="show" id="OdN-DA-GcX"/>
+                        <segue destination="nUZ-1p-uPH" kind="show" identifier="MusicListToPlaySong" id="OdN-DA-GcX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ga0-HR-T5e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-78" y="38"/>
+            <point key="canvasLocation" x="-801" y="22"/>
         </scene>
         <!--Play SongVC-->
         <scene sceneID="GC9-Oo-Z0V">
@@ -102,12 +113,27 @@
                     <view key="view" contentMode="scaleToFill" id="drJ-Ne-Jkh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbg-1b-WtN">
+                                <rect key="frame" x="149" y="60" width="77.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hbg-1b-WtN" firstAttribute="centerX" secondItem="drJ-Ne-Jkh" secondAttribute="centerX" id="V94-w7-X32"/>
+                            <constraint firstItem="Hbg-1b-WtN" firstAttribute="top" secondItem="4b4-z0-osT" secondAttribute="bottom" constant="40" id="ayR-kO-R3D"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="songTitleLbl" destination="Hbg-1b-WtN" id="KpS-9u-o0e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HM1-Ri-QzH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="669" y="37"/>
+            <point key="canvasLocation" x="-55.200000000000003" y="20.239880059970016"/>
         </scene>
     </scenes>
 </document>

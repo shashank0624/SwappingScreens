@@ -24,14 +24,25 @@ class MusicListVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func load3rdScreenPressed(_ sender: UIButton) {
+        let songTitle = "Lag Ja Gale ki dil abhi bhara nhi"
+        performSegue(withIdentifier: "MusicListToPlaySong", sender: songTitle)
     }
-    */
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "MusicListToPlaySong"{
+            if let destination = segue.destination as? PlaySongVC{
+                if let song = sender as? String{
+                    destination.selectedSong = song
+                }
+                
+            }
+        }
+        
+      
+        
+    }
+    
 
 }
